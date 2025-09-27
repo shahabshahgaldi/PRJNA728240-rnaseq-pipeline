@@ -1,0 +1,85 @@
+# --------------------
+# R / RStudio
+# --------------------
+.Rhistory
+.Rapp.history
+.RData
+.RDataTmp
+.Ruserdata
+.Rproj.user/
+.Renviron
+
+# R markdown / knitr cache & outputs
+*_cache/
+.cache/
+*.utf8.md
+*.knit.md
+vignettes/*.html
+vignettes/*.pdf
+
+# Package / docs / build artifacts
+docs/
+*.tar.gz
+/*.Rcheck/
+
+# --------------------
+# Python / Conda / envs (local)
+# --------------------
+env/
+venv/
+.venv/
+__pycache__/
+*.pyc
+miniconda3/
+conda-meta/
+pkgs/
+
+# --------------------
+# Large intermediate data / runtime outputs (do NOT upload raw FASTQ, BAM, genome fasta, indexes)
+# --------------------
+fastq/
+sra_cache/
+alignments/
+trimmed/
+reference_genome/
+hisat2_index/
+adapters/
+counts/
+logs/
+
+# --------------------
+# But keep curated final results that you explicitly want tracked
+# (un-ignore specific result files you intentionally uploaded)
+# --------------------
+!01_sra_to_gene_counts/results/
+!01_sra_to_gene_counts/results/clean_raw_counts.csv
+!01_sra_to_gene_counts/results/clean_raw_counts.txt
+!01_sra_to_gene_counts/results/raw_counts.rar
+
+!02_gene_counts_to_DE_and_plots/results/
+!02_gene_counts_to_DE_and_plots/results/DE_results_d2_vs_d0_withSymbols.csv
+!02_gene_counts_to_DE_and_plots/results/DE_results_d6_vs_d0_withSymbols.csv
+!02_gene_counts_to_DE_and_plots/results/filter_threshold_summary.csv
+!02_gene_counts_to_DE_and_plots/results/normalized_counts.csv
+!02_gene_counts_to_DE_and_plots/results/Volcano_d2_vs_d0.pdf
+!02_gene_counts_to_DE_and_plots/results/Volcano_d6_vs_d0.pdf
+
+# --------------------
+# Logs / temp / archive / system files
+# --------------------
+logs/
+*.log
+*.tmp
+*.swp
+*.swo
+
+# archives & large binaries
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db

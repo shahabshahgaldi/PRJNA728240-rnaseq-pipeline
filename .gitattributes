@@ -1,0 +1,8 @@
+# Count shell scripts as Shell
+*.sh linguist-language=Shell
+
+# Force recognition of Python helpers
+*.py linguist-language=Python
+
+# Keep R files as R
+*.R linguist-language=R

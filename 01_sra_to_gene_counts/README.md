@@ -80,9 +80,8 @@ It covers the entire process: downloading SRA data, converting to FASTQ, trimmin
 
 After running the pipeline, results will be available in:
 
-```
 counts/featureCounts/
-```
+
 
 Key result files:
 
@@ -90,6 +89,12 @@ Key result files:
 * `clean_raw_counts.txt` — Cleaned gene count table (tab-delimited).
 * `clean_raw_counts.csv` — Cleaned gene count table (comma-delimited).
 
----
+### Precomputed Results
 
-```
+For convenience, a `results/` folder is included in this repository containing example outputs generated from this pipeline:
+
+* `results/clean_raw_counts.csv`
+* `results/clean_raw_counts.txt`
+* `results/raw_counts.rar` — Compressed archive of `raw_counts.txt`
+
+These files provide a reference for expected output and can be used for testing or benchmarking without re-runn
